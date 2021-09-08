@@ -1,0 +1,38 @@
+@import "variables";
+
+/* Datepicker */
+.ui-widget-content {
+  background-color: $color3;
+  color: $color4;
+}
+
+.ui-widget-header {
+  color: $color4;
+  background-color: $color1;
+  border-radius: 7em;
+}
+
+.ui-widget.ui-widget-content {
+  border-radius: 1em;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highligh {
+  background-color: #99BFA3;
+  color: $color2;
+  border: 1px solid #5e8067;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  background-color: $color4;
+  border: none;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 0.5em 1.5em;
+}

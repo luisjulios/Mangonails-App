@@ -1,0 +1,28 @@
+@import "reset";
+@import "variables";
+@import "animaciones";
+
+@for $in from 1 through 8 {
+  .c-#{$in}{
+  color: darken($color3 , $in * 3%);
+  }
+}
+
+@for $in from 1 through 20 {
+  .bc-#{$in}{
+    background-color: lighten($color4, $in * 0.7%);
+  }
+}
+
+$degradados: (
+  deg1: #ffbcbae0,
+  deg2: #fd9c99d7,
+  deg3: #f78989c2,
+  deg4: #da7f7fc2
+
+);
+@each $deg, $color in $degradados {
+  .stn--#{$deg} {
+    background-color: $color;
+  }
+}

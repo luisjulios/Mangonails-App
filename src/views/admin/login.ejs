@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Marcellus&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/bootstrap.min.js"></script>
+  <title>Mangonails.cl - Login</title>
+</head>
+
+<body class="body">
+  <header id="desvanecer" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a href="./login" class="logo"><img class="giro header__logo img" src="img/logo.webp" alt="logo">
+          <h1 class="phrase">Mangonails.cl es
+            <span class="words">
+              <i>belleza</i>
+              <i>glamour</i>
+              <i>cuidado</i>
+              <i>diseño</i>
+              <i>estilo</i>
+            </span>
+          </h1>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main class="container m-auto">
+    <section id="desvanecer" class="gracias col-lg-8 col-md-7 m-3 p-4 m-auto">
+      <h2>Inicia sesión</h2>
+      <form class="d-flex flex-column align-items-center" action="/login" method="POST" name="login">
+        <div class="w-100 form-floating">
+          <input required name="user" autocomplete="off" type="text" class="form-control" id="user" placeholder="User">
+          <label for="user">User</label>
+        </div>
+        <div class="w-100 form-floating">
+          <input required name="password" autocomplete="off" type="password" class="form-control" id="password" placeholder="Password">
+          <label for="email">Password</label>
+        </div>
+        <input type="submit" class="btn" id="btnLogin" value="Ingresar">
+      </form>
+    </section>
+  </main>
+  <footer class="footer py-3 bg-white container-fluid" id="desvanecer">
+    <div>
+      <p class="footer__p text-center">Mangonails.cl 2021 &copy; - Todos los derechos reservados.</p>
+    </div>
+    <div>
+      <p class="footer__p text-center">Diseño y desarrollo por <a href="https://www.linkedin.com/in/antsth/"
+          target="_blank">Luis Julio</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>

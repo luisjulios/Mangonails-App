@@ -1,0 +1,87 @@
+#desvanecer {
+  animation-name: desvanecer;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+@keyframes desvanecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.giro {
+  animation: 1s giro 1;
+  backface-visibility: visible;
+}
+@keyframes giro {
+  40% {
+    transform: perspective(300px) translateZ(120px) rotateY(170deg);
+  }
+
+  100% {
+    transform: perspective(300px) rotateY(360deg);
+  }
+}
+.phrase {
+  display: flex;
+  color: $color5;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  .words {
+    overflow: hidden;
+    height: 1.1em;
+    margin-left: 0.35em;
+  }
+  .words i {
+    display: block;
+    width: auto;
+    font-style: italic;
+    color: $color3;
+    animation:
+      textRotate 6000ms 500ms infinite;
+  }
+}
+
+@keyframes textRotate {
+  0% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-112%);
+  }
+
+  25% {
+    transform: translateY(-100%);
+  }
+
+  35% {
+    transform: translateY(-212%);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+
+  60% {
+    transform: translateY(-312%);
+  }
+
+  75% {
+    transform: translateY(-300%);
+  }
+
+  85% {
+    transform: translateY(-412%);
+  }
+
+  100% {
+    transform: translateY(-400%);
+  }
+}
